@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: auto;
+}
+
+.header {
+  height: 89px;
+  background-color: #2d303a;
+}
+
+.slider {
+  height: 600px;
+  background-color: #f06c64;
+}
+
+.services {
+  height: 495px;
+  background-color: #f2f2f2;
+}
