@@ -1,5 +1,19 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+a:link, a:visited {
+  color: unset;
+  text-decoration: none;
+}
+
+html {
+  font: 10px Lato, sans-serif;
+  --coral: #f06c64;
+  --grey: #666d89;
 }
 
 .wrapper {
@@ -8,16 +22,127 @@ body {
 }
 
 .header {
-  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  height: 77px;
   background-color: #2d303a;
 }
 
+.logo {
+  margin: 17px 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: white;
+}
+
+.logo > .colored {
+  color: var(--coral);
+}
+
+.nav-menu {
+  margin: 30px 27px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-ul__separator {
+  color: var(--grey);
+}
+
+.nav-ul > li {
+  margin-right: 12.6px;
+}
+
+.ruler {
+  height: 6px;
+}
+
+.ruler__header {
+  background-color: #323746;
+}
+
 .slider {
-  height: 600px;
-  background-color: #f06c64;
+  height: 594px;
+  background-color: var(--coral);
+}
+
+.ruler__slider {
+  background-color: #ea676b;
+}
+
+.section {
+  color: var(--grey);
 }
 
 .services {
   height: 495px;
+  padding: 59px 40px;
   background-color: #f2f2f2;
+}
+
+.section__header {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.section__text {
+  margin: 18px 0 47px;
+  line-height: 1.7;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid_3col {
+  gap: 34px 11px;
+  grid-template-columns: repeat(3, auto);
+}
+
+.grid_2col {
+  gap: 12px 22px;
+  grid-template-columns: repeat(2, auto);
+}
+
+.grid_2col > .icon {
+  grid-row: 1 / span 2;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.cell__header {
+  line-height: 0.8;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.grid_2col:nth-child(2) > .cell__header {
+  letter-spacing: 1px;
+}
+
+.cell__text {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.ruler__section {
+  background-color: white;
 }

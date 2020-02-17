@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Singolo 1</title>
+  <link rel="stylesheet" href="font_lato.css">
   <link rel="stylesheet" href="singolo1.css">
 </head>
 <body>
   <main class="wrapper">
 
     <header class="header">
-      <div class="logo">singolo*</div>
+      <h1 class="logo">singolo<span class="colored">*</span></h1>
       <nav class="nav-menu">
-        <ul>
+        <ul class="nav-ul">
           <li><a href="#">home</a></li>
+          <li class="nav-ul__separator">·</li>
           <li><a href="#">services</a></li>
+          <li class="nav-ul__separator">·</li>
           <li><a href="#">portfolio</a></li>
+          <li class="nav-ul__separator">·</li>
           <li><a href="#">about</a></li>
+          <li class="nav-ul__separator">·</li>
           <li><a href="#">contact</a></li>
         </ul>
       </nav>
     </header>
+    <hr class="ruler ruler__header">
 
     <section class="slider">
       <button class="slider__btn slider__btn_left"></button>
@@ -32,8 +38,9 @@
       </div>
       <button class="slider__btn slider__btn_right"></button>
     </section>
+    <hr class="ruler ruler__slider">
 
-    <section class="section">
+    <section class="section services">
       <h2 class="section__header">our services</h2>
       <p class="section__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="grid grid_3col">
@@ -45,7 +52,7 @@
         <div class="grid grid_2col">
           <img src="assets/icons/bulb.svg" alt="bulb" class="icon">
           <h3 class="cell__header">innovative ideas</h3>
-          <p class="cell__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+          <p class="cell__text">Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
         </div>
         <div class="grid grid_2col">
           <img src="assets/icons/heart.svg" alt="heart" class="icon">
@@ -55,12 +62,12 @@
         <div class="grid grid_2col">
           <img src="assets/icons/phone.svg" alt="phone" class="icon">
           <h3 class="cell__header">responsive layout</h3>
-          <p class="cell__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+          <p class="cell__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.</p>
         </div>
         <div class="grid grid_2col">
           <img src="assets/icons/bubble.svg" alt="bubble" class="icon">
-          <h3 class="cell__header">24/7 support</h3>
-          <p class="cell__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem.</p>
+          <h3 class="cell__header">24 / 7 support</h3>
+          <p class="cell__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-tesque egestas venenatis lorem.</p>
         </div>
         <div class="grid grid_2col">
           <img src="assets/icons/star.svg" alt="" class="icon">
@@ -68,8 +75,8 @@
           <p class="cell__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
         </div>
       </div>
-
     </section>
+    <hr class="ruler ruler__section">
 
   </main>
 </body>
