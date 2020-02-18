@@ -59,6 +59,14 @@ html {
 
 .nav-ul > li {
   margin-right: 12.6px;
+  cursor: default;
+}
+
+.nav-ul a {
+  transition: all 0.3s ease-in-out;
+}
+.nav-ul a:hover {
+  color: var(--coral);
 }
 
 .ruler {
@@ -84,6 +92,12 @@ html {
   background: none;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 4px;
+  transition: all 0.3s ease-in-out;
+
+}
+.slider__btn:hover {
+  background-color: #fafafa50;
 }
 
 .slider__btn_left {
