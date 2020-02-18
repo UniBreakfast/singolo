@@ -257,10 +257,13 @@ html {
 }
 
 .cell__text {
+  height: 64px;
+  width: 217px;
   line-height: 1.8;
   font-size: 1.2rem;
   padding-right: 10px;
   text-align: justify;
+  overflow: hidden;
 }
 
 .ruler__section {
