@@ -180,7 +180,8 @@ html {
 
 .phone:first-child {
   transform: translate(2px, -15px);
-  box-shadow: 25px 26px #ce5d56;
+  box-shadow: 6.25px 6.5px #ce5d56, 12.5px 13px #ce5d56,
+              18.75px 19.5px #ce5d56, 25px 26px #ce5d56;
 }
 
 .phone:first-child > .phone__screen {
@@ -190,7 +191,8 @@ html {
 
 .phone:last-child {
   transform: translate(-26px, -15px) rotate(90deg);
-  box-shadow: 25px -25px #ce5d56;
+  box-shadow: 6.25px -6.25px #ce5d56, 12.5px -12.5px #ce5d56,
+              18.75px -18.75px #ce5d56, 25px -25px #ce5d56;
 }
 
 .phone:last-child > .phone__screen {
