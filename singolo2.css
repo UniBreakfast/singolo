@@ -60,6 +60,7 @@ html, button {
   border: 1px solid var(--grey);
   color: var(--grey);
   text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
 }
 
 .filters__btn:hover, .filters__btn.selected {
@@ -171,6 +172,7 @@ html, button {
   width: 33px;
   height: 33px;
   background-color: var(--grey);
+  transition: all 0.3s ease-in-out;
 }
 
 .social-btns__btn:hover {
