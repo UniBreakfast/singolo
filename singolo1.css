@@ -24,12 +24,12 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
-  height: 77px;
+  height: 89px;
   background-color: #2d303a;
 }
 
 .logo {
-  margin: 17px 40px;
+  margin: 29px 40px;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -42,7 +42,7 @@ html {
 }
 
 .nav-menu {
-  margin: 30px 27px;
+  margin: 42px 27px;
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
