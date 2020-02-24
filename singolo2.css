@@ -12,6 +12,7 @@ a:link, a:visited {
 
 html, button {
   font: 10px Lato, sans-serif;
+  --coral: #f06c64;
   --grey: #666d89;
 }
 
@@ -59,6 +60,11 @@ html, button {
   border: 1px solid var(--grey);
   color: var(--grey);
   text-transform: capitalize;
+}
+
+.filters__btn:hover, .filters__btn.selected {
+  color: white;
+  border-color: white;
 }
 
 .grid {
@@ -165,6 +171,11 @@ html, button {
   width: 33px;
   height: 33px;
   background-color: var(--grey);
+}
+
+.social-btns__btn:hover {
+  cursor: pointer;
+  background-color: var(--coral);
 }
 
 .social-btns__btn_facebook {
