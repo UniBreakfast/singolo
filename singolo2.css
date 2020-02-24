@@ -37,7 +37,7 @@ html, button {
 }
 
 .section__text {
-  margin: 18px 0 10px;
+  margin: 19px 0 11px;
   line-height: 1.65;
   font-size: 1.8rem;
   font-weight: 300;
@@ -161,7 +161,7 @@ html, button {
 
 .social-btns {
   display: flex;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .social-btns__btn {
