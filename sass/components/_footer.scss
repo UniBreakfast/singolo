@@ -1,0 +1,17 @@
+.footer {
+  height: 76px;
+  background: $color-dark-grey;
+  display: flex;
+  justify-content: space-between;
+
+  .copyright {
+    color: $color-light-grey;
+    margin: 30px 42px;
+    font-size: 1.2rem;
+    letter-spacing: -0.1px;
+  }
+
+  .social-btns {
+    margin: 22px 32px;
+  }
+}

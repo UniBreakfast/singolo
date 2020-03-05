@@ -1,0 +1,37 @@
+.social-btns {
+  display: flex;
+  margin-top: 29px;
+}
+
+.social-btns__btn {
+  margin-right: 7px;
+  background-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  width: 33px;
+  height: 33px;
+  background: $color-light-grey;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-btns__btn:hover {
+  cursor: pointer;
+  background: $color-prime;
+}
+
+.social-btns__btn_facebook {
+  mask-image: url("assets/icons/Facebook.svg");
+  -webkit-mask-image: url("assets/icons/Facebook.svg");
+}
+.social-btns__btn_gplus {
+  mask-image: url("assets/icons/Google.svg");
+  -webkit-mask-image: url("assets/icons/Google.svg");
+}
+.social-btns__btn_twitter {
+  mask-image: url("assets/icons/Twitter.svg");
+  -webkit-mask-image: url("assets/icons/Twitter.svg");
+}
+.social-btns__btn_linkedin {
+  mask-image: url("assets/icons/LinkedIn.svg");
+  -webkit-mask-image: url("assets/icons/LinkedIn.svg");
+}

@@ -1,0 +1,21 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch sass/main.scss singolo3.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniBreakfast/singolo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UniBreakfast/singolo/issues"
+  },
+  "homepage": "https://github.com/UniBreakfast/singolo#readme"
+}

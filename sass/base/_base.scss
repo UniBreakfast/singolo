@@ -1,0 +1,21 @@
+html {
+  font: $font;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:visited, :link {
+  color: unset;
+}
+
+.wrapper {
+  margin: auto;
+  width: 1020px;
+}

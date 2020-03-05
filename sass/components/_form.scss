@@ -1,0 +1,55 @@
+.form {
+  width: 619px;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  &__input, &__textarea {
+    background: $color-prime-dark;
+    color: $color-light;
+    border-radius: 5px;
+    height: 38px;
+    font: $font;
+    font-size: 1.1rem;
+    padding-left: 15px;
+    letter-spacing: 0.4px;
+
+    &::placeholder {
+      color: $color-prime-text;
+    }
+
+    &:-webkit-autofill {
+      -webkit-text-fill-color: $color-light;
+      -webkit-box-shadow: 0 0 0 999px $color-prime-dark inset;
+      box-shadow: 0 0 0 999px $color-prime-dark inset;
+    }
+  }
+
+  &__textarea {
+    height: 202px;
+    padding-top: 10px;
+    resize: none;
+  }
+
+  &__btn {
+    height: 38px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    right: -106px;
+    bottom: 0;
+    font: $font;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    color: $color-prime-dark;
+    background: $color-light;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
