@@ -182,6 +182,9 @@ html {
 .contacts__links img {
   margin-right: 9px;
 }
+.contacts__links li:hover {
+  text-decoration: underline;
+}
 
 .footer {
   height: 76px;
