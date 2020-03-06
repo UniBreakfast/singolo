@@ -3,10 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>* {all: unset}</style>
+  <title>Singolo</title>
+  <link rel="stylesheet" href="font_lato.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="wrapper">
 
+    <header class="header">
+      <h1 class="logo">singolo<span class="colored">*</span></h1>
+      <nav class="nav-menu">
+        <ul class="nav-ul">
+          <li><a href="#">home</a></li>
+          <li class="nav-ul__separator">·</li>
+          <li><a href="#">services</a></li>
+          <li class="nav-ul__separator">·</li>
+          <li><a href="#">portfolio</a></li>
+          <li class="nav-ul__separator">·</li>
+          <li><a href="#">about</a></li>
+          <li class="nav-ul__separator">·</li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr class="ruler ruler__header">
+
+    <section class="slider">
+      <button class="slider__btn slider__btn_left"></button>
+      <div class="slides">
+        <div class="slides__slide phones">
+
+          <div class="phone">
+            <div class="phone__cam"></div>
+            <div class="phone__speaker"></div>
+            <div class="phone__screen"></div>
+            <div class="phone__btn"><div></div></div>
+          </div>
+
+          <div class="phone phone_landscape">
+            <div class="phone__cam"></div>
+            <div class="phone__speaker"></div>
+            <div class="phone__screen"></div>
+            <div class="phone__btn"><div></div></div>
+          </div>
+
+        </div>
+      </div>
+      <button class="slider__btn slider__btn_right"></button>
+    </section>
+    <hr class="ruler ruler__slider">
+
+    <section class="section services">
+      <h2 class="section__header">our services</h2>
+      <p class="section__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      <ul class="grid grid_3col">
+
+        <li class="grid grid_2col">
+          <img src="assets/icons/pen.svg" alt="pen" class="icon">
+          <h3 class="cell__header">custom design</h3>
+          <p class="cell__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+        </li>
+
+        <li class="grid grid_2col">
+          <img src="assets/icons/bulb.svg" alt="bulb" class="icon">
+          <h3 class="cell__header">innovative ideas</h3>
+          <p class="cell__text">Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+        </li>
+
+        <li class="grid grid_2col">
+          <img src="assets/icons/heart.svg" alt="heart" class="icon">
+          <h3 class="cell__header">love is the answer</h3>
+          <p class="cell__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+        </li>
+
+        <li class="grid grid_2col">
+          <img src="assets/icons/phone.svg" alt="phone" class="icon">
+          <h3 class="cell__header">responsive layout</h3>
+          <p class="cell__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.</p>
+        </li>
+
+        <li class="grid grid_2col">
+          <img src="assets/icons/bubble.svg" alt="bubble" class="icon">
+          <h3 class="cell__header">24 / 7 support</h3>
+          <p class="cell__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-tesque egestas venenatis lorem.</p>
+        </li>
+
+        <li class="grid grid_2col">
+          <img src="assets/icons/star.svg" alt="star" class="icon">
+          <h3 class="cell__header">feel like a star</h3>
+          <p class="cell__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+        </li>
+
+      </ul>
+    </section>
+    <hr class="ruler ruler__section">
+
+    <section class="section portfolio">
+      <h2 class="section__header">portfolio</h2>
+      <p class="section__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      <ul class="filters">
+        <li><button class="filters__btn selected">all</button></li>
+        <li><button class="filters__btn">web design</button></li>
+        <li><button class="filters__btn">graphic design</button></li>
+        <li><button class="filters__btn">artwork</button></li>
+      </ul>
+      <ul class="grid grid_4col">
+        <li><img src="assets/images/sailboat.png" alt="sailboat"></li>
+        <li><img src="assets/images/girlface.png" alt="girlface"></li>
+        <li><img src="assets/images/town.png" alt="town"></li>
+        <li><img src="assets/images/robot.png" alt="robot"></li>
+        <li><img src="assets/images/animals.png" alt="animals"></li>
+        <li><img src="assets/images/sdk_ide.png" alt="sdk_ide"></li>
+        <li><img src="assets/images/clipart.png" alt="clipart"></li>
+        <li><img src="assets/images/birds.png" alt="birds"></li>
+        <li><img src="assets/images/castlehead.png" alt="castlehead"></li>
+        <li><img src="assets/images/tape.png" alt="tape"></li>
+        <li><img src="assets/images/monster.png" alt="monster"></li>
+        <li><img src="assets/images/glass.png" alt="glass"></li>
+        <li><img src="assets/images/saladFaces.png" alt="saladFaces"></li>
+      </ul>
+    </section>
+    <hr class="ruler ruler__portfolio">
+
+    <section class="section about-us">
+      <h2 class="section__header">about us</h2>
+      <p class="section__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      <ul class="grid grid_3col">
+
+        <li class="employee">
+          <img src="assets/images/woman.png" alt="woman face" class="employee__photo">
+          <h3 class="employee__header">Adam Jensen</h3>
+          <p class="employee__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+          <ul class="social-btns">
+            <li class="social-btns__btn social-btns__btn_facebook">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_gplus">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_twitter">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_linkedin">
+              <button></button></li>
+          </ul>
+        </li>
+        <li class="employee">
+          <img src="assets/images/man.png" alt="smiling man face" class="employee__photo">
+          <h3 class="employee__header">Desmond Miles</h3>
+          <p class="employee__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+          <ul class="social-btns">
+            <li class="social-btns__btn social-btns__btn_facebook">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_gplus">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_twitter">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_linkedin">
+              <button></button></li>
+          </ul>
+        </li>
+        <li class="employee">
+          <img src="assets/images/smiling_woman.png" alt="smiling woman face" class="employee__photo">
+          <h3 class="employee__header">Scolara Visari</h3>
+          <p class="employee__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+          <ul class="social-btns">
+            <li class="social-btns__btn social-btns__btn_facebook">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_gplus">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_twitter">
+              <button></button></li>
+            <li class="social-btns__btn social-btns__btn_linkedin">
+              <button></button></li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+    <hr class="ruler ruler__about">
+
+    <section class="section get-quote">
+      <h2 class="section__header">Get a Quote</h2>
+      <p class="section__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      <div class="section__form-group">
+
+        <form class="form" action="https://google.com/" method="GET">
+          <input class="form__input" name="name" type="text" placeholder="Name (Required)" required>
+          <input class="form__input" name="email" type="email" placeholder="Email (Required)" required>
+          <input class="form__input" name="q" type="text" placeholder="Subject">
+          <textarea class="form__textarea" name="details" placeholder="Describe your project in detail..."></textarea>
+
+          <input class="form__btn form__btn_w-offset" type="submit" value="Submit">
+        </form>
+
+        <div class="contacts">
+          <h3 class="contacts__header">Contact Information</h3>
+          <p class="contacts__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+          <ul class="contacts__links">
+            <li>
+              <img src="assets/icons/mappin.png" alt="map pin">
+              <a href="">Elm St. 14/05 Lost City</a>
+            </li>
+            <li>
+              <img src="assets/icons/phone.png" alt="phone">
+              <a href="tel:+035283318635">03528 331 86 35</a>
+            </li>
+            <li>
+              <img src="assets/icons/envelope.png" alt="envelope">
+              <a href="mailto:info@singolo.com">info@singolo.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <hr class="ruler ruler__get-quote">
+
+    <footer class="footer">
+      <span class="copyright">&copy; Copyright 2013</span>
+      <ul class="social-btns">
+        <li class="social-btns__btn social-btns__btn_facebook">
+          <button></button></li>
+        <li class="social-btns__btn social-btns__btn_gplus">
+          <button></button></li>
+        <li class="social-btns__btn social-btns__btn_twitter">
+          <button></button></li>
+        <li class="social-btns__btn social-btns__btn_linkedin">
+          <button></button></li>
+      </ul>
+    </footer>
+
+  </main>
 </body>
 </html>
