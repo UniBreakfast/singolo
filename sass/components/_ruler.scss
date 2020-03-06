@@ -1,6 +1,22 @@
 .ruler {
   height: 6px;
 
+  &__header {
+    background: $color-alt-grey;
+  }
+
+  &__section {
+    background: white;
+  }
+
+  &__slider {
+    background: $color-prime-alter;
+  }
+
+  &__portfolio {
+    background-color: $color-alt-grey;
+  }
+
   &__get-quote {
     background: $color-prime-alter;
   }

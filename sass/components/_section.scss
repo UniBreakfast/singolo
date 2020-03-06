@@ -1,24 +1,23 @@
 .section {
   padding: 60px 40px;
-}
+  color: $color-light-grey;
 
-.section__header {
-  font-size: 3rem;
-  font-weight: 900;
-  text-transform: capitalize;
-}
+  &__header {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
 
-.section__text {
-  margin: 19px 0 11px;
-  line-height: 1.65;
-  font-size: 1.8rem;
-  font-weight: 300;
-  text-align: justify;
-  padding-bottom: 33px;
-}
+  &__text {
+    margin: 19px 0 11px;
+    line-height: 1.65;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: justify;
+  }
 
-.section__form-group {
-  display: flex;
-  justify-content: space-between;
-
+  &__form-group {
+    display: flex;
+    justify-content: space-between;
+  }
 }

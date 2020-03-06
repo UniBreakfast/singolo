@@ -20,6 +20,10 @@
       color: $color-prime-text;
     }
 
+    &:hover {
+      border: 1px solid #00000033;
+    }
+
     &:-webkit-autofill {
       -webkit-text-fill-color: $color-light;
       -webkit-box-shadow: 0 0 0 999px $color-prime-dark inset;

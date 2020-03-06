@@ -1,0 +1,38 @@
+.services {
+  height: 494px;
+  padding: 59px 40px;
+  background-color: #f2f2f2;
+
+  .grid_3col {
+    margin-top: 48px;
+    padding-left: 1px;
+    gap: 33px 20px;
+
+    .grid_2col {
+      gap: 12px 19px;
+
+      .cell__header {
+        margin-left: -1px;
+        line-height: 0.8;
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-transform: capitalize;
+      }
+
+      .cell__text {
+        height: 64px;
+        width: 217px;
+        line-height: 1.8;
+        font-size: 1.2rem;
+        text-align: justify;
+        overflow: hidden;
+      }
+
+      .icon {
+        grid-row: 1 / span 2;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

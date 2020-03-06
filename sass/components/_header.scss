@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 89px;
+  background-color: $color-dark-grey;
+
+  .logo {
+    margin: 29px 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    color: white;
+
+    .colored {
+      color: $color-prime;
+    }
+  }
+}

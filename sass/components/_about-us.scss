@@ -1,0 +1,32 @@
+.about-us {
+  height: 728px;
+
+  .section__text {
+    margin-bottom: 45px;
+  }
+
+  .grid_3col {
+    gap: 19px;
+
+    .employee__photo {
+      width: 301px;
+    }
+
+    .employee__header {
+      margin: 13px -1px;
+      font-size: 1.8rem;
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .employee__text {
+      font-size: 1.2rem;
+      line-height: 1.75;
+      letter-spacing: -0.1px;
+      margin: -5px 0;
+      text-align: justify;
+    }
+  }
+}

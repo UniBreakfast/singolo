@@ -1,0 +1,48 @@
+.grid_4col {
+  gap: 20px;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(3, 187px);
+  height: 600px;
+  overflow: hidden;
+
+  li {
+    overflow: hidden;
+  }
+
+  [alt="sailboat"] {
+    transform: translate(-8px, -11px);
+  }
+  [alt="girlface"] {
+    transform: translate(-82px, -43px);
+  }
+  [alt="town"] {
+    transform: translate(-11px, -1px);
+  }
+  [alt="robot"] {
+    transform: translate(-24px, -2px);
+  }
+  [alt="animals"] {
+    transform: translate(-10px, -16px);
+  }
+  [alt="sdk_ide"] {
+    transform: translate(-16px, -4px);
+  }
+  [alt="clipart"] {
+    transform: translate(-31px, -39px);
+  }
+  [alt="birds"] {
+    transform: translate(-24px, -32px);
+  }
+  [alt="castlehead"] {
+    transform: translate(-16px, -2px);
+  }
+  [alt="tape"] {
+    transform: translate(-141px, -113px);
+  }
+  [alt="monster"] {
+    transform: translate(-144px, -175px);
+  }
+  [alt="glass"] {
+    transform: translate(-36px, -60px);
+  }
+}

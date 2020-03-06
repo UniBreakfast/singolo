@@ -1,0 +1,28 @@
+.nav-menu {
+  margin: 42px 27px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+
+  .nav-ul {
+    display: flex;
+
+    &__separator {
+      color: $color-light-grey;
+    }
+
+    li {
+      margin-right: 12.6px;
+      cursor: default;
+    }
+
+    a {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-prime;
+      }
+    }
+  }
+}

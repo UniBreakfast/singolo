@@ -1,0 +1,86 @@
+.phones {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+  height: 458px;
+  border-radius: 27px;
+  background-color: #f2f2f2;
+
+  &_landscape {
+    margin: 0 calc((458px - 215px) / 2);
+  }
+
+  &__cam {
+    width: 9px;
+    height: 9px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    border-radius: 50%;
+    background: #eb5055;
+    border: 2.5px solid #d8d8d8;
+  }
+
+  &__speaker {
+    margin-top: 11px;
+    width: 36px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #acacac;
+  }
+
+  &__screen {
+    width: 195px;
+    height: 339px;
+    margin-top: 21px;
+    border: 3px solid #c6c6c6;
+    border-radius: 5px;
+  }
+
+  &__btn {
+    width: 42px;
+    height: 42px;
+    margin-top: 7px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    display: flex;
+
+    div {
+      width: 16px;
+      height: 16px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 2px solid #bababa;
+      margin: auto;
+    }
+  }
+
+  $dark: #ce5d56;
+
+  &:first-child {
+    transform: translate(2px, -15px);
+    box-shadow: 6.25px 6.5px $dark, 12.5px 13px $dark,
+                18.75px 19.5px $dark, 25px 26px $dark;
+    .phone__screen {
+      background-image: url("assets/images/saladFaces.png");
+      background-position: -13px -135px;
+    }
+  }
+
+  &:last-child {
+    transform: translate(-26px, -15px) rotate(90deg);
+    box-shadow: 6.25px -6.25px $dark, 12.5px -12.5px $dark,
+                18.75px -18.75px $dark, 25px -25px $dark;
+    .phone__screen {
+      background-image: url("assets/images/cyanFaces.png");
+      background-position: -118px -121px;
+    }
+  }
+}

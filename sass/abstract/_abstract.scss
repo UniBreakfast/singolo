@@ -2,7 +2,20 @@ $font: 10px Lato, sans-serif;
 $color-prime: #f06c64;
 $color-prime-dark: #d6564f;
 $color-prime-alter: #ea676b;
+$color-prime-text: #f48c8f;
+$color-light: #f0d8d9;
 $color-light-grey: #666d89;
 $color-dark-grey: #2d303a;
-$color-light: #f0d8d9;
-$color-prime-text: #f48c8f;
+$color-alt-grey: #323746;
+
+.grid {
+  display: grid;
+
+  &_2col {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  &_3col {
+    grid-template-columns: repeat(3, auto);
+  }
+}

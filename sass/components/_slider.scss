@@ -1,0 +1,30 @@
+.slider {
+  display: flex;
+  height: 594px;
+  background-color: $color-prime;
+
+  &__btn {
+    width: 100px;
+    background: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #fafafa50;
+    }
+
+    &_left {
+      background-image: url("assets/icons/left.svg");
+    }
+    &_right {
+      background-image: url("assets/icons/right.svg");
+    }
+  }
+
+  &__slides {
+    flex: 1;
+    margin: 0 10px;
+  }
+}
