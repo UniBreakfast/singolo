@@ -1,5 +1,5 @@
 .portfolio {
-  height: 870px;
+  height: 863px;
   background-color: $color-dark-grey;
   padding-top: 59px;
 
@@ -23,6 +23,7 @@
       &:hover, &.selected {
         color: white;
         border-color: white;
+        cursor: pointer;
       }
 
       li:first-child > & {

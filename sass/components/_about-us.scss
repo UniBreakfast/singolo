@@ -9,11 +9,13 @@
     gap: 19px;
 
     .employee__photo {
-      width: 301px;
+      width: 300px;
+      width: 300px;
+      object-fit: none;
     }
 
     .employee__header {
-      margin: 13px -1px;
+      margin: 13px 0;
       font-size: 1.8rem;
       max-width: 300px;
       white-space: nowrap;
