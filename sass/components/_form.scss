@@ -22,9 +22,13 @@
     }
 
     &:hover {
-      border: 1px solid #00000033;
+      border-color: #00000033;
     }
-
+/*
+    &:invalid {
+      border-color: red;
+    }
+ */
     &:-webkit-autofill {
       -webkit-text-fill-color: $color-light;
       -webkit-box-shadow: 0 0 0 999px $color-prime-dark inset;

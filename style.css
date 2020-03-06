@@ -206,7 +206,7 @@ html {
 }
 .phone:first-child .phone__screen {
   background-image: url("assets/images/saladFaces.png");
-  background-position: -13px -135px;
+  background-position: -14px -135px;
 }
 .phone:last-child {
   transform: translate(-26.5px, -15.5px) rotate(90deg);
@@ -432,12 +432,17 @@ li:nth-child(3) > .portfolio .filters__btn {
   padding-left: 15px;
   letter-spacing: 0.4px;
   border: 1px solid #d6564f;
+  /*
+      &:invalid {
+        border-color: red;
+      }
+   */
 }
 .form__input::placeholder, .form__textarea::placeholder {
   color: #f48c8f;
 }
 .form__input:hover, .form__textarea:hover {
-  border: 1px solid #00000033;
+  border-color: #00000033;
 }
 .form__input:-webkit-autofill, .form__textarea:-webkit-autofill {
   -webkit-text-fill-color: #f0d8d9;
