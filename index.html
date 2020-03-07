@@ -36,6 +36,7 @@
     <hr class="ruler ruler__header">
 
     <section class="slider">
+      <h2 hidden>slider</h2>
       <button class="slider__btn slider__btn_left"></button>
       <div class="slider__slides">
         <div class="slides__slide phones">
@@ -224,8 +225,10 @@
     </section>
     <hr class="ruler ruler__get-quote">
 
-    <footer class="footer" id="footer">
+    <footer class="footer">
       <span class="copyright">&copy; Copyright 2013</span>
+      <a class="go-up" onclick="home.scrollIntoView({behavior: 'smooth'})">
+        scroll home</a>
       <ul class="social-btns">
         <li class="social-btns__btn social-btns__btn_facebook">
           <button></button></li>
@@ -237,10 +240,6 @@
           <button></button></li>
       </ul>
     </footer>
-    <script>
-      footer.onclick = e => e.target!=footer? 0 : home
-        .scrollIntoView({behavior: 'smooth'});
-    </script>
 
   </main>
 </body>

@@ -11,6 +11,23 @@
     letter-spacing: -0.1px;
   }
 
+  .go-up {
+    color: $color-light;
+    cursor: pointer;
+    margin: 14px;
+    font-size: 1.4rem;
+    transition: all 0.6s ease-in-out;
+    opacity: 1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &:not(:hover) .go-up {
+    opacity: 0;
+    margin: 35px;
+  }
+
   .social-btns {
     margin: 22px 32px;
   }

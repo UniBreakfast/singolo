@@ -336,6 +336,11 @@ li:nth-child(3) > .portfolio .filters__btn {
 }
 .grid_4col li {
   overflow: hidden;
+  transition: all 0.7s ease-in-out;
+}
+.grid_4col li:hover {
+  filter: contrast(1.2) saturate(1.3);
+  cursor: pointer;
 }
 .grid_4col [alt=sailboat] {
   transform: translate(-8px, -11px);
@@ -387,6 +392,10 @@ li:nth-child(3) > .portfolio .filters__btn {
   width: 300px;
   width: 300px;
   object-fit: none;
+  transition: all 5s ease-in-out;
+}
+.about-us .grid_3col .employee__photo:hover {
+  transform: translateY(8px);
 }
 .about-us .grid_3col .employee__header {
   margin: 13px 0;
@@ -519,6 +528,21 @@ li:nth-child(3) > .portfolio .filters__btn {
   margin: 30px 42px;
   font-size: 1.2rem;
   letter-spacing: -0.1px;
+}
+.footer .go-up {
+  color: #f0d8d9;
+  cursor: pointer;
+  margin: 14px;
+  font-size: 1.4rem;
+  transition: all 0.6s ease-in-out;
+  opacity: 1;
+}
+.footer .go-up:hover {
+  text-decoration: underline;
+}
+.footer:not(:hover) .go-up {
+  opacity: 0;
+  margin: 35px;
 }
 .footer .social-btns {
   margin: 22px 32px;

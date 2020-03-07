@@ -12,6 +12,11 @@
       width: 300px;
       width: 300px;
       object-fit: none;
+      transition: all 5s ease-in-out;
+
+      &:hover {
+        transform: translateY(8px);
+      }
     }
 
     .employee__header {
