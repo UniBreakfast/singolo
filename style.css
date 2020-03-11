@@ -381,6 +381,7 @@ li:nth-child(3) > .portfolio .filters__btn {
 
 .about-us {
   height: 728px;
+  background: #f2f2f2;
 }
 .about-us .section__text {
   margin-bottom: 45px;
@@ -492,7 +493,7 @@ li:nth-child(3) > .portfolio .filters__btn {
 }
 .contacts__text {
   margin-top: 9px;
-  line-height: 1.9;
+  line-height: 22px;
   font-size: 1.2rem;
   text-align: justify;
   letter-spacing: -0.1px;
