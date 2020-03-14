@@ -116,14 +116,19 @@ html {
 .slider {
   display: flex;
   height: 594px;
-  background-color: #f06c64;
+  position: relative;
+  overflow: hidden;
 }
 .slider__btn {
   width: 100px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
   background: none;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 4px;
+  z-index: 1;
   transition: all 0.3s ease-in-out;
 }
 .slider__btn:hover {
@@ -131,21 +136,34 @@ html {
   cursor: pointer;
 }
 .slider__btn_left {
-  background-image: url("assets/icons/left.svg");
+  left: 0;
+  background-image: url("assets/icons/arrow-left.svg");
 }
 .slider__btn_right {
-  background-image: url("assets/icons/right.svg");
+  right: 0;
+  background-image: url("assets/icons/arrow-right.svg");
 }
 .slider__slides {
   flex: 1;
-  margin: 0 10px;
+}
+.slider__slides.sliding > .slides__slide {
+  transition: all 1.5s ease-in-out;
 }
 
-.phones {
+.slides__slide {
   display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 110px;
+}
+.slides__slide[data-position=right] {
+  transform: translateX(100%);
+}
+.slides__slide[data-position=left] {
+  transform: translateX(-100%);
 }
 
 .phone {
@@ -200,21 +218,59 @@ html {
   border: 2px solid #bababa;
   margin: auto;
 }
-.phone:first-child {
+.phone.off .phone__screen {
+  background: black !important;
+}
+
+.two-phones {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f06c64;
+}
+.two-phones .phone:first-child {
   transform: translate(2px, -15px);
   box-shadow: 6.25px 6.5px #ce5d56, 12.5px 13px #ce5d56, 18.75px 19.5px #ce5d56, 25px 26px #ce5d56;
 }
-.phone:first-child .phone__screen {
+.two-phones .phone:first-child .phone__screen {
   background-image: url("assets/images/saladFaces.png");
   background-position: -14px -135px;
 }
-.phone:last-child {
+.two-phones .phone:last-child {
   transform: translate(-26.5px, -15.5px) rotate(90deg);
   box-shadow: 6.25px -6.25px #ce5d56, 12.5px -12.5px #ce5d56, 18.75px -18.75px #ce5d56, 25px -25px #ce5d56;
 }
-.phone:last-child .phone__screen {
+.two-phones .phone:last-child .phone__screen {
   background-image: url("assets/images/cyanFaces.png");
   background-position: -119px -122px;
+}
+
+.three-phones {
+  background-color: #648BF0;
+}
+.three-phones .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.three-phones .layer > div {
+  margin: auto;
+}
+.three-phones .further_phones {
+  display: flex;
+  width: 870px;
+  justify-content: space-between;
+  opacity: 0.5;
+  transform: translateY(15px) scale(0.6);
+}
+.three-phones .phone {
+  box-shadow: 6.25px 6.5px #5D81DF, 12.5px 13px #5D81DF, 18.75px 19.5px #5D81DF, 25px 26px #5D81DF;
+}
+.three-phones .phone .phone__screen {
+  background-image: url("assets/images/saladFaces.png");
+  background-position: -14px -135px;
 }
 
 .services {

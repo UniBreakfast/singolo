@@ -1,14 +1,19 @@
 .slider {
   display: flex;
   height: 594px;
-  background-color: $color-prime;
+  position: relative;
+  overflow: hidden;
 
   &__btn {
     width: 100px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
     background: none;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 4px;
+    z-index: 1;
     transition: all 0.3s ease-in-out;
 
     &:hover {
@@ -17,15 +22,38 @@
     }
 
     &_left {
-      background-image: url("assets/icons/left.svg");
+      left: 0;
+      background-image: url("assets/icons/arrow-left.svg");
     }
     &_right {
-      background-image: url("assets/icons/right.svg");
+      right: 0;
+      background-image: url("assets/icons/arrow-right.svg");
     }
   }
 
   &__slides {
     flex: 1;
-    margin: 0 10px;
+
+    &.sliding > .slides__slide {
+      transition: all 1.5s ease-in-out;
+    }
+  }
+}
+
+.slides__slide {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 110px;
+
+  &[data-position="right"] {
+    transform: translateX(100%);
+  }
+
+  &[data-position="left"] {
+    transform: translateX(-100%);
   }
 }

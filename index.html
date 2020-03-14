@@ -6,6 +6,7 @@
   <title>Singolo</title>
   <link rel="stylesheet" href="font_lato.css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main class="wrapper">
@@ -37,9 +38,9 @@
 
     <section class="slider">
       <h2 hidden>slider</h2>
-      <button class="slider__btn slider__btn_left"></button>
+      <button class="slider__btn slider__btn_left" data-btn="left"></button>
       <div class="slider__slides">
-        <div class="slides__slide phones">
+        <div class="slides__slide two-phones active">
 
           <div class="phone">
             <div class="phone__cam"></div>
@@ -56,8 +57,37 @@
           </div>
 
         </div>
+        <div class="slides__slide three-phones" data-position="right">
+
+          <div class="layer three-phones__bottom-layer">
+            <div class="further_phones">
+              <div class="phone">
+                <div class="phone__cam"></div>
+                <div class="phone__speaker"></div>
+                <div class="phone__screen"></div>
+                <div class="phone__btn"><div></div></div>
+              </div>
+              <div class="phone">
+                <div class="phone__cam"></div>
+                <div class="phone__speaker"></div>
+                <div class="phone__screen"></div>
+                <div class="phone__btn"><div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer three-phones__top-layer">
+            <div class="phone">
+              <div class="phone__cam"></div>
+              <div class="phone__speaker"></div>
+              <div class="phone__screen"></div>
+              <div class="phone__btn"><div></div></div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <button class="slider__btn slider__btn_right"></button>
+      <button class="slider__btn slider__btn_right" data-btn="right"></button>
     </section>
     <hr class="ruler ruler__slider">
 

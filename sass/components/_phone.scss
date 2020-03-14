@@ -1,10 +1,3 @@
-.phones {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .phone {
   display: flex;
   flex-direction: column;
@@ -63,9 +56,21 @@
     }
   }
 
+  &.off {
+    .phone__screen {
+      background: black !important;
+    }
+  }
+}
+
+.two-phones {
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-prime;
+
   $dark: #ce5d56;
 
-  &:first-child {
+  .phone:first-child {
     transform: translate(2px, -15px);
     box-shadow: 6.25px 6.5px $dark, 12.5px 13px $dark,
                 18.75px 19.5px $dark, 25px 26px $dark;
@@ -75,13 +80,50 @@
     }
   }
 
-  &:last-child {
+  .phone:last-child {
     transform: translate(-26.5px, -15.5px) rotate(90deg);
     box-shadow: 6.25px -6.25px $dark, 12.5px -12.5px $dark,
                 18.75px -18.75px $dark, 25px -25px $dark;
     .phone__screen {
       background-image: url("assets/images/cyanFaces.png");
       background-position: -119px -122px;
+    }
+  }
+}
+
+.three-phones {
+  background-color: #648BF0;
+
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+
+    &>div {
+      margin: auto;
+    }
+  }
+
+  .further_phones {
+    display: flex;
+    width: 870px;
+    justify-content: space-between;
+    opacity: 0.5;
+    transform: translateY(15px) scale(0.6);
+  }
+
+  .phone {
+    $dark: #5D81DF;
+
+    box-shadow: 6.25px 6.5px $dark, 12.5px 13px $dark,
+                18.75px 19.5px $dark, 25px 26px $dark;
+
+    .phone__screen {
+      background-image: url("assets/images/saladFaces.png");
+      background-position: -14px -135px;
     }
   }
 }
