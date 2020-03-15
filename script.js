@@ -55,5 +55,32 @@ function phoneBtnHandler() {
 }
 
 
+const GALLERY = document.querySelector('.gallery')
+const PORTFOLIO_BTNS = document.querySelectorAll('.filters__btn')
+
+PORTFOLIO_BTNS.forEach(btn => btn.onclick = potfolioBtnHandler)
+
+function potfolioBtnHandler(event) {
+  if (event.target.classList.contains('active')) return
+  document.querySelector('.filters__btn.active').classList.remove('active')
+  event.target.classList.add('active')
+  const pictures = [...document.querySelectorAll('.gallery>li')]
+  const shuffled = pictures.slice()
+  do { shuffled.sort(()=> 0.5 - Math.random()) }
+  while (shuffled.some((picture, i)=> picture == pictures[i] ))
+  shuffled.forEach(picture => GALLERY.append(picture))
+}
+
+
+GALLERY.onclick = pictureClickHandler
+
+function pictureClickHandler(event) {
+  if (event.target.tagName != 'IMG') return
+  const selected = GALLERY.querySelector('.selected')
+  event.target.parentNode.classList.add('selected')
+  if (selected) selected.classList.remove('selected')
+}
+
+
 document.querySelector('.go-up').onclick =()=>
   scrollTo({top: 0, behavior: 'smooth'})

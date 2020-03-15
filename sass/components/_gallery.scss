@@ -3,7 +3,7 @@
   grid-template-columns: repeat(4, 220px);
   grid-template-rows: repeat(3, 187px);
   height: 601px;
-  overflow: hidden;
+  // overflow: hidden;
 
   li {
     overflow: hidden;
@@ -12,6 +12,11 @@
     &:hover {
       filter: contrast(1.2) saturate(1.3);
       cursor: pointer;
+    }
+
+    &.selected {
+      box-shadow: 0 0 0 5px $color-prime;
+      // border: 5px solid $color-prime;
     }
   }
 
