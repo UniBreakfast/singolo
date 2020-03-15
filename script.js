@@ -1,3 +1,26 @@
+const NAV = document.querySelector('.nav-ul')
+
+NAV.onclick = navGoToHandler
+
+function navGoToHandler(event) {
+  event.preventDefault()
+  if (event.target.tagName == 'A') {
+    const selector = event.target.getAttribute('href')
+    changeActiveNavLink(selector)
+    if (selector == '#home') scrollTo({top: 0, behavior: 'smooth'})
+    else document.querySelector(selector).scrollIntoView({behavior: 'smooth'})
+  }
+}
+
+function changeActiveNavLink(selector) {
+  NAV.querySelector('.active').classList.remove('active')
+  NAV.querySelector(`[href="${selector}"]`).classList.add('active')
+}
+
+onscroll =()=> changeActiveNavLink(scrollY<550? '#home' : scrollY<1050?
+  '#services' : scrollY<1950? '#portfolio' : scrollY<2650? '#about' :'#contact')
+
+
 const SLIDER_BTNS = document.querySelectorAll('.slider__btn')
 const SLIDES = document.querySelector('.slider__slides')
 
@@ -30,3 +53,7 @@ PNONE_BTNS.forEach(btn => btn.onclick = phoneBtnHandler)
 function phoneBtnHandler() {
   this.parentNode.classList.toggle('off')
 }
+
+
+document.querySelector('.go-up').onclick =()=>
+  scrollTo({top: 0, behavior: 'smooth'})

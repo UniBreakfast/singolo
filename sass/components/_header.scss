@@ -3,6 +3,9 @@
   justify-content: space-between;
   height: 89px;
   background-color: $color-dark-grey;
+  position: sticky;
+  z-index: 99;
+  top: 0;
 
   .logo {
     margin: 29px 40px;

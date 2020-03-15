@@ -35,6 +35,9 @@ html {
   justify-content: space-between;
   height: 89px;
   background-color: #2d303a;
+  position: sticky;
+  z-index: 99;
+  top: 0;
 }
 .header .logo {
   margin: 29px 40px;
@@ -68,7 +71,7 @@ html {
 .nav-menu .nav-ul a {
   transition: all 0.3s ease-in-out;
 }
-.nav-menu .nav-ul a:hover {
+.nav-menu .nav-ul a:hover, .nav-menu .nav-ul a.active {
   color: #f06c64;
 }
 

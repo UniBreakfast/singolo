@@ -20,7 +20,7 @@
     a {
       transition: all 0.3s ease-in-out;
 
-      &:hover {
+      &:hover, &.active {
         color: $color-prime;
       }
     }
