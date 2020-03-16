@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000033;
+  display: flex;
+
+  &[hidden] {
+    display: none;
+  }
+
+  &__dialog {
+    margin: auto;
+    background: $color-bg-light;
+    border-radius: 5px;
+    padding: 30px 50px 60px;
+    width: 400px;
+    font-size: 1.2rem;
+    color: $color-light-grey;
+    position: relative;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__ok-btn {
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+    border: 1px solid $color-light-grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: $color-light-grey;
+  }
+}

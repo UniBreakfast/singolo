@@ -218,14 +218,28 @@
       <p class="section__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="section__form-group">
 
-        <form class="form" action="https://google.com/" method="GET">
+        <form class="form">
+          <!--  action="https://google.com/" method="GET" -->
           <input class="form__input" name="name" type="text" placeholder="Name (Required)" required>
           <input class="form__input" name="email" type="email" placeholder="Email (Required)" required>
-          <input class="form__input" name="q" type="text" placeholder="Subject">
-          <textarea class="form__textarea" name="details" placeholder="Describe your project in detail..."></textarea>
+          <input class="form__input" name="subj" type="text" placeholder="Subject">
+          <textarea class="form__textarea" name="details" placeholder="Describe your project in detail..." maxlength="512"></textarea>
 
           <input class="form__btn form__btn_w-offset" type="submit" value="Submit">
         </form>
+
+        <div class="modal" >
+          <div class="modal__dialog">
+            <h3 class="modal__header">The letter was sent</h3>
+            <p>
+              <b>Subject:</b> <span class="modal__subject"></span>
+            </p>
+            <p>
+              <b>Description:</b> <span class="modal__description"></span>
+            </p>
+            <button class="modal__ok-btn">OK</button>
+          </div>
+        </div>
 
         <div class="contacts">
           <h3 class="contacts__header">Contact Information</h3>

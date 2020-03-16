@@ -82,5 +82,30 @@ function pictureClickHandler(event) {
 }
 
 
+const FORM = document.forms[0]
+const MODAL = document.querySelector('.modal')
+const SUBJ = MODAL.querySelector('.modal__subject')
+const DESCRIPTION = MODAL.querySelector('.modal__description')
+const OK = MODAL.querySelector('.modal__ok-btn')
+
+FORM.onsubmit = submitHandler
+
+function submitHandler(event) {
+  if (!FORM.checkValidity()) return
+
+  MODAL.hidden = false
+  SUBJ.innerText = FORM.subj.value || 'Without subject'
+  DESCRIPTION.innerText = FORM.details.value || 'Without description'
+
+  event.preventDefault()
+}
+
+OK.onclick = MODAL.onclick = closeModalHandler
+
+function closeModalHandler(event) {
+  if (event.target == OK || event.target == MODAL) MODAL.hidden = true
+}
+
+
 document.querySelector('.go-up').onclick =()=>
   scrollTo({top: 0, behavior: 'smooth'})

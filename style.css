@@ -8,7 +8,7 @@
   grid-template-columns: repeat(3, auto);
 }
 
-html {
+html, input, textarea, button {
   font: 10px Lato, sans-serif;
 }
 
@@ -498,7 +498,6 @@ li:nth-child(3) > .portfolio .filters__btn {
   color: #f0d8d9;
   border-radius: 5px;
   height: 38px;
-  font: 10px Lato, sans-serif;
   font-size: 1.1rem;
   padding-left: 15px;
   letter-spacing: 0.4px;
@@ -542,6 +541,42 @@ li:nth-child(3) > .portfolio .filters__btn {
 .form__btn:hover {
   background: white;
   color: black;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000033;
+  display: flex;
+}
+.modal[hidden] {
+  display: none;
+}
+.modal__dialog {
+  margin: auto;
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 30px 50px 60px;
+  width: 400px;
+  font-size: 1.2rem;
+  color: #666d89;
+  position: relative;
+}
+.modal__header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.modal__ok-btn {
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #666d89;
 }
 
 .contacts {
