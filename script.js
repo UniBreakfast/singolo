@@ -104,6 +104,7 @@ OK.onclick = MODAL.onclick = closeModalHandler
 
 function closeModalHandler(event) {
   if (event.target == OK || event.target == MODAL) MODAL.hidden = true
+  for (const field in FORM.elements) FORM.elements[field].value = ''
 }
 
 
