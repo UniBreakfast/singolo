@@ -212,6 +212,10 @@ html, input, textarea, button {
   border-radius: 50%;
   background-color: #fafafa;
   display: flex;
+  transition: all 0.5s ease;
+}
+.phone__btn:hover {
+  box-shadow: 0 0 5px 1px #666d89;
 }
 .phone__btn div {
   width: 16px;
